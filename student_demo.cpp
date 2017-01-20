@@ -1,4 +1,3 @@
-// Lee Daniel
 // Lab 1
 
 #include "student.h"
