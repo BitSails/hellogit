@@ -1,4 +1,3 @@
-// Lee Daniel
 // Lab 1
 
 // including header file for access to Student class
