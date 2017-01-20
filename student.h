@@ -1,4 +1,3 @@
-// Lee Daniel
 // Lab 1
 
 // header guard created to avoid multiple inclusion error
