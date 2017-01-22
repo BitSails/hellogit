@@ -14,7 +14,6 @@ int main() {
 	squarevector(NumManip);
 
 	printnumbers(NumManip);
-	system("pause");
 	return 0;
 
 }
