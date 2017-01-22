@@ -21,7 +21,7 @@ double NumberManip::getAdd(){
 }
 
 void NumberManip::setNum(int number1){
-	num1 = number2;
+	num1 = number1;
 }
 
 void NumberManip::setNum2(double number2){
