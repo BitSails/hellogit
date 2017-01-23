@@ -16,11 +16,4 @@ public:
 };
 #endif
 
-//Implementation file. C++ file.
-#include <string>
-#include "Students.h"
 
-void Students::setId(int x)
-{
-	studentId = x;
-}
