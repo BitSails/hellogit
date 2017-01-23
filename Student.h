@@ -1,6 +1,6 @@
 #include <string>
-#ifndef STUDENTS_H
-#define STUDENTS_H
+#ifndef STUDENT_H
+#define STUDENT_H
 
 class Students
 {
