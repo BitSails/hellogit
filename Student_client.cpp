@@ -24,6 +24,5 @@ int main()
 		cout << school[i].getId( ) << "  "
 			<< school[i].getName( ) << endl;
 	}//end of second for loop
-	system("pause");
 	return 0;
 }
