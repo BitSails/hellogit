@@ -1,6 +1,6 @@
 //Implementation file. C++ file.
 #include <string>
-#include "Students.h"
+#include "Student.h"
 
 void Students::setId(int x)
 {

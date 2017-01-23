@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "Students.h"
+#include "Student.h"
 
 using namespace std;
 
