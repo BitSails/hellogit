@@ -11,31 +11,22 @@ class Racer
 {
 public:
 	//constructor initializing Racer's names and Racer's Category
-	Racer(const string & name, const string & category) 
-		:racerName(name), racerCategory(category){
-	}
+	Racer(const string & name, const int & category); 		
 	
 	//function to set the Racer name
-	void setRacerName(const string & name){
-		racerName = name; //Stores the Racer's full name
-	}
+	void setRacerName(const string & name);
 
 	//function to set the Racer's Category
-	void setRacerCategory(const string & category){
-		racerCategory = category;
-	}
+	void setRacerCategory(const int & category);
 
 	//function to retrieve the Patient name
-	const string & getRacerName() const {
-		return racerName;
+	const string & getRacerName() const ;
 	}
 
 	//function to retrieve the Patient's Id
-	const string & getracerCategory() const {
-		return racerCategory;
-	}	
+	const int & getracerCategory() const ;
 	
 private:
 	string racerName;
-	string racerCategory;	
+	int racerCategory;	
 };
