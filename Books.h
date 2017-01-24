@@ -1,28 +1,24 @@
-#include<string>
 
 class Books
 {
 	public:
-		Books()
-		{
-			fee=0;
-		}
-
-
-		void setName(string member)
-		{
-			name=member;
-		}
-	
+		Books();
 		
-		float getBalance(int numDays)
-		{
-			rate=0.10;
-			fee=numDays * rate;
-			return fee;
-		}
+		void setName();
+		
+		string getName();
+		
+		void setFee();
+	
+		float getFee();
+
+
+
+		
 
 	private:
-		string name, float fee, float rate;
+		string name;
+		float fee;
+		
 		
 };
