@@ -17,14 +17,13 @@ int main (){
 	Test testObj4;
 	vector <Test> objVect; 
 	
-	cout << "Enter a character, string, and two numbers: " << endl;
+	cout << "Enter 2 characters and a string: " << endl;
 	cin >> xChar;
+	cin >> xChar2;
 	cin >> string1;
-	cin >> xnum1;
-	cin >> xnum2;
 	
 	
-	testObj3.setVect(xChar, string1);
+	
 	
 	
 	//testObj.setVect(xChar, string1, xnum1, xnum2);
@@ -32,6 +31,7 @@ int main (){
 	
 	testObj.setString(string1);
 	testObj2.setChar(xChar);
+	testObj3.setVect(xChar, string1);
 	testObj4.setChar(xChar2);
 	
 	objVect.push_back(testObj3);
@@ -39,7 +39,7 @@ int main (){
 	objVect.push_back(testObj2);
 	objVect.push_back(testObj4);
 	
-	cout << "Size: " << objVect.size();
+
 	
 	for(int x = 0; x < objVect.size(); x++) {
 		cout << objVect[x].getString() << objVect[x].getChar() << endl;
