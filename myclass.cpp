@@ -29,7 +29,7 @@ string Class::getName ()
 int Class::getGrade ()
 {
   return grade;
-}
+};
 
 #endif
 
