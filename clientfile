@@ -1,0 +1,50 @@
+// CLIENT FUNCTIONS
+
+#include "Candidate.h"
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+void addVector(vector<Candidate>&);
+void printVector(const vector<Candidate> &);
+int i = 0;
+
+int main()
+{
+	vector <Candidate> candidates(4);
+
+	addVector(candidates);
+	printVector(candidates);
+
+	return 0;
+}
+
+
+// add objects to vector
+void addVector(vector<Candidate>& newCandidate)
+{
+	for (i = 0; i < newCandidate.size(); i++)
+	{
+		cout << "Enter Candidate Name: ";
+		cin >> cand;
+
+		cout << "Enter Number of Votes: ";
+		cin >> votes;
+
+		Candidate newCandidate(cand, votes);
+		newCandidate.push_back(newCandidate);
+		cout << endl;
+	}
+}
+
+//print contents of vector
+void printVector(const vector<Candidate> & newCandidate)
+{
+	for (i = 0; i < newCandidate.size(); i++ )
+	{
+		cout << "Candidate Name: " << candidates[i].getCandName() << endl;
+		cout << "Number of Votes: " << candidates[i].getNumVotes() << endl;
+	}
+}
