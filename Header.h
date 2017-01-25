@@ -10,7 +10,7 @@ double cost;
 
   
 public:
-Phone (string = "", double float = 0.0);
+Phone (string = "", double = 0.0);
   void setPhoneType(string n);
   string getPhoneType();
   void setPhoneCost(double c);
