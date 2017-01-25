@@ -25,4 +25,4 @@ int Employee::getHours() {
 Employee::Employee() {
 name = "";
 hoursWorked = 0;
-}
+}//
