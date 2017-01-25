@@ -3,16 +3,17 @@
 #include <vector>
 using namespace std;
 
-class student{
+class phone{
 private:
-int ID;
-string name;
+string type;
+double cost;
 
-string getName(string name){
-return name;
-}
-
-void setID(int x){
-ID=x;}
-
+  
+public:
+Phone (string = "", double float = 0.0);
+  void setPhoneType(string n);
+  string getPhoneType();
+  void setPhoneCost(double c);
+  double getPhoneCost(); 
+  void outputMessage();
 };
