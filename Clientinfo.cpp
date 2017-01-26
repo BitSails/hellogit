@@ -1,4 +1,4 @@
-#include "Client.h"
+#include "Clientinfo.h"
 
 void Clientinfo::setname (std::string clientname)
 {

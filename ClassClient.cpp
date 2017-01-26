@@ -24,8 +24,8 @@ int main ()
 
 	for (int i = 0; i < 4; i++)
 	{
-		cout << "Client's " << i+1 << " name is " << Cinfo[i].getname;
-		cout << " and he/she is " << Cinfo[i].getage << " years old." << endl;
+		cout << "Client's " << i+1 << " name is " << Cinfo[i].getname();
+		cout << " and he/she is " << Cinfo[i].getage() << " years old." << endl;
 	}
 	return 0;
 }
