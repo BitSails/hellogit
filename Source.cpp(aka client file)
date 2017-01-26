@@ -11,8 +11,12 @@ int main(){
   phone Samsung;
   phone Huawei;
   phone Htc;
+  phone myPhone;
  
-  vector <phone> myPhone;
- phone.setPhoneType(iPhone);
+  vector <phone> myPhone(iPhone, Htc, Samsung , Huawei);
+cout<<"My vector contains:"<<myPhone.size();
+
+ 
+ 
   
 
