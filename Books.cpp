@@ -1,4 +1,4 @@
-#Include "Books.h"
+#include "Books.h"
 
 void book::setbName(string x)
 {
@@ -15,4 +15,8 @@ double book:: getprice()
 {
 return price;
 }
-
+Books::Books ()	// Contructor - DO NOT RECREATE VARIABLE
+{
+bName = "";
+price= 0.0; 
+};
