@@ -6,6 +6,10 @@
 
 
 // Implementing the member function prototypes declared in class Students
+Student::Student(std::string name, int age){
+	student_Name = name;
+	student_Age = age;
+}
 void Student::set_StudentName(std::string name){
 	student_Name = name;
 }
