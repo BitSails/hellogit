@@ -1,13 +1,13 @@
 #include<iostream>
 
 
-Class Dress;
+class Dress{
 public:
 	void setId(int dressId)
 	{
 		id=dressId;
 	}
-	int getId()const;
+	int getId()
 	{
 		return id;
 	}
@@ -15,11 +15,11 @@ public:
 	{
 		price=dressPrice;
 	}
-	double getPrice() const;
+	double getPrice() 
 	{
 		return price;
 	}
 private:
-	int i;
+	int id;
 	double price;
 };
