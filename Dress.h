@@ -1,3 +1,6 @@
+#include<iostream>
+
+
 Class Dress;
 public:
 	void setId(int dressId)
