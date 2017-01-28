@@ -11,20 +11,22 @@ class Racer
 {
 public:
 	//constructor initializing Racer's names and Racer's Category
-	Racer(const string & name, const int & category); 		
+	Racer(const string name, const int category); 		
 	
 	//function to set the Racer name
-	void setRacerName(const string & name);
+	void setRacerName(const string name);
 
 	//function to set the Racer's Category
-	void setRacerCategory(const int & category);
+	void setRacerCategory(const int category);
 
-	//function to retrieve the Patient name
-	const string & getRacerName() const ;
-	}
+	//function to display information
+	void displayInfo();
 
-	//function to retrieve the Patient's Id
-	const int & getracerCategory() const ;
+	//function to retrieve the Racer's name
+	string getRacerName();
+	
+	//function to retrieve the Racer's Category
+	int getracerCategory();
 	
 private:
 	string racerName;

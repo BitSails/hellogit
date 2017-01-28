@@ -7,11 +7,9 @@ using namespace std;
 
 #include "Racer.h"
 
-Racer::Racer(string name, int category)  //constructor
-{
-	racerName = name;
-	racerCategory = category;
-}
+//constructor
+Racer::Racer(const string name, const int category):racerName(name),racerCategory(category)
+{}
 
 //set the Racer name
 void Racer::setRacerName(string name)
