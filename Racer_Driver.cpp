@@ -13,9 +13,9 @@ int main()
 	int category = 0;
 	Racer bikeRacer(name, category);
 	
-	cout << "Enter the Bike racer's name?: ";
+	cout << "Enter the Bike racer's name: ";
 	getline(cin, name);
-	cout << "\nEnter the Bike racer's Category";
+	cout << "\nEnter the Bike racer's Category Level:";
 	cin >> category;
 
 	bikeRacer.setRacerName(name);

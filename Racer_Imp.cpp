@@ -38,7 +38,9 @@ int Racer::getracerCategory()
 //displays all of the Racer object's data
 void Racer::displayInfo()
 {
+	cout << "**** Rider's Name and Category	****"
 	cout << "Name: " << racerName << endl;
 	cout << "Category: " << racerCategory << endl;
+	cout << "        *******************" << endl;
 }	
 
