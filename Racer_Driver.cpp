@@ -9,9 +9,9 @@ using namespace std;
 
 int main()
 {
-	string name;
-	int category;
-	Racer bikeRacer;
+	string name = "";
+	int category = 0;
+	Racer bikeRacer(name, category);
 	
 	cout << "Enter the Bike racer's name?: ";
 	getline(cin, name);
