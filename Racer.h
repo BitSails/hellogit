@@ -11,7 +11,6 @@ using namespace std;
 //Racer class definition
 class Racer
 {
-
 public:
 	//constructor initializing Racer's names and Racer's Category
 	Racer(const string name, const int category);
