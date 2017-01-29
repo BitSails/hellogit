@@ -9,16 +9,16 @@ int main()
 	vector<House>D;
 	House design;
 	design.setColour("yellow");
-	design.setRoom(6)
+	design.setRoom(6);
 	D.push_back(design);
 	design.setColour("blue");
-	design.setRoom(9)
+	design.setRoom(9);
 	D.push_back(design);
 	design.setColour("orange");
-	design.setRoom(7)
+	design.setRoom(7);
 	D.push_back(design);
 	design.setColour("white");
-	design.setRoom(6)
+	design.setRoom(6);
 	D.push_back(design);
 	for(int i=0;i<D.size();i++)
 	{
