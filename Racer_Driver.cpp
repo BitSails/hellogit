@@ -11,7 +11,7 @@ using namespace std;
 
 void fillVector(vector<Racer>&);
 void printVector(const vector<Racer>&);
-//void printVector2(const vector<Racer>&);
+//void printVector2(const vector<Racer>&); /Need help to understand this.
 
 
 int main()
