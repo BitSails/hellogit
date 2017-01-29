@@ -1,15 +1,15 @@
 //Racer Class Implementation
-#include<string>
-#include<array>
-#include<iostream>
-#include<iomanip>
-using namespace std;
 
 #include "Racer.h"
 
+using namespace std;
+
 //constructor
-Racer::Racer(const string name, const int category):racerName(name),racerCategory(category)
-{}
+Racer::Racer(const string name, const int category)
+	{
+		racerName = name;
+		racerCategory = category;
+	}
 
 //set the Racer name
 void Racer::setRacerName(string name)
@@ -17,7 +17,7 @@ void Racer::setRacerName(string name)
 	racerName = name;
 }
 
-//retrieve the Racer name	
+//retrieve the Racer name
 string Racer::getRacerName()
 {
 	return racerName;
@@ -43,4 +43,3 @@ void Racer::displayInfo()
 	cout << "Category: " << racerCategory << endl;
 	cout << "        *******************" << endl;
 }	
-
