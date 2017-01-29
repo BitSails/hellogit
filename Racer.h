@@ -11,24 +11,28 @@ using namespace std;
 //Racer class definition
 class Racer
 {
+
 public:
-	//constructor initializing Racer's names and Racer's Category
-	Racer(const string name, const int category);
+	//default constructor initializing Racer's names and Racer's Category
+	Racer();
+
+	//Overload constructor
+	Racer(string name, int category);
 
 	//function to set the Racer name
-	void setRacerName(const string name);
+	void setRacerName(string name);
 
 	//function to set the Racer's Category
-	void setRacerCategory(const int category);
+	void setRacerCategory(int category);
 
 	//function to display information
-	void displayInfo();
+	void displayInfo() const;
 
 	//function to retrieve the Racer's name
-	string getRacerName();
+	string getRacerName() const;
 
 	//function to retrieve the Racer's Category
-	int getracerCategory();
+	int getracerCategory() const;
 
 private:
 	string racerName;
