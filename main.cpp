@@ -4,8 +4,28 @@
 #include <vector>
 using namespace std;
 
-int main (){
+
+int linearSearch(vector<Test> A, string key, char aChar) { 
+
+
+	for(int i = 0; i < A.size(); i ++) { 
 	
+		if (A[i].getString() == key){ 
+			return i;
+
+				}
+		
+		if (A[i].getChar() == aChar){ 
+			return i;
+				}
+		
+	}
+		return -1;
+}
+
+
+int main (){
+	string input = "";
 	char xChar = 'c';
 	string string1 = "";
 	int xnum1 = 0;
@@ -53,5 +73,26 @@ int main (){
 	
 	
 		}
+	char hChar = '\0';
+	int result = 0;
+	   while(cin >> input >> hChar)//perform searches until Ctrl + D entered
+    {
+		
+        result = linearSearch(objVect, input, hChar);
+
+        cout<<"  "<< input <<" was ";
+
+        if (result == -1)
+          cout<<"not found";
+        else
+          cout<<"found at position "<< result;
+
+
+        cout<<endl<<endl<<"Enter a value to search for: ";
+			
+    }
+	
 	
 	}
+
+
