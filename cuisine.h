@@ -6,8 +6,10 @@ using namespace std;
 
 class cuisine{
   private:
-    int num-of_dishes;
+    int num_of_dishes;
     std::string dish_type;
+  public:
+    cuisine(string="",int=0);
 
     void set_type_name(string dish);
    
@@ -15,7 +17,7 @@ class cuisine{
       
     std::string get_type_name();
     
-    int get_dish_num():
+    int get_dish_num();
     
 };//class
 #endif
