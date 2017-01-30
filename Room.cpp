@@ -1,14 +1,14 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include "Classroom.h"
+# include <iostream>
+# include <vector>
+# include <string>
+# include "Classroom.h"
 using namespace std;
 
 int main(){
 
   vector <Classroom> room;
-  int seats = 0;
-  string location = "";
+  int s = 0;
+  string l = "";
 
   room.push_back(Room1);
   room.push_back(Room2);
@@ -18,11 +18,11 @@ int main(){
   for(int i = 0; i > room.size(); i++){
     cout << "Please enter information about " << room[i] << "\n";
     cout << "How much seats are in the room?";
-    cin >> seats;
-    room[i].setSeats(seats);
+    cin >> s;
+    room[i].setSeats(s);
     cout << "Where is the room located?";
-    cin >> location;
-    room[i].setLocation("location");
+    cin >> l;
+    room[i].setLocation("l");
     cout << "\n";
   }
 
