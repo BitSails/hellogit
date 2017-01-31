@@ -2,16 +2,16 @@
 # include <string>
 using namespace std;
 
-class Classroom{
+class Classroom {
 public:
-  Classroom();
-  void setSeats(int x);
-  int getSeats();
-  void setLocation(string y);
-  string getLocation();
+	Classroom(int x, string y);
+	void setSeats(int x);
+	int getSeats();
+	void setLocation(string y);
+	string getLocation();
 
 private:
-  int seats;
-  string location;
+	int seats;
+	string location;
 
 };

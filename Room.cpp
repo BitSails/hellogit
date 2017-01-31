@@ -4,34 +4,21 @@
 # include "Classroom.h"
 using namespace std;
 
-int main(){
+int main() {
 
-  vector <Classroom> room;
-  int s = 0;
-  string l = "";
+	vector <Classroom> room;
 
-  room.push_back(Room1);
-  room.push_back(Room2);
-  room.push_back(Room3);
-  room.push_back(Room4);
+	room.push_back({50 , "Lesile Robinson Building"});
+	room.push_back({ 40, "Roy Marshall Teaching Complex" });
+	room.push_back({ 45, "Roy Marshall Teaching Complex" });
+	room.push_back({ 60, "Clico Building" });
 
-  for(int i = 0; i > room.size(); i++){
-    cout << "Please enter information about " << room[i] << "\n";
-    cout << "How much seats are in the room?";
-    cin >> s;
-    room[i].setSeats(s);
-    cout << "Where is the room located?";
-    cin >> l;
-    room[i].setLocation("l");
-    cout << "\n";
-  }
-
-  for(int i = 0; i > room.size(); i++){
-    cout << "Information about room " << room[i] << "\n";
-    cout << "Number of seats: " << room[i].getSeats();
-    cout << "Location: " << room[i].getLocation();
-    cout << "\n";
-  }
-  system("pause");
-  return 0;
+	for (unsigned int i = 0; i < room.size(); i++) {
+		cout << "Information about Room " << i + 1 << "\n";
+		cout << "Number of seats: " << room[i].getSeats() << "\n";
+		cout << "Location: " << room[i].getLocation();
+		cout << "\n";
+	}
+	system("pause");
+	return 0;
 }

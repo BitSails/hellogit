@@ -3,23 +3,23 @@
 # include "Classroom.h"
 using namespace std;
 
-Classroom::Classroom(){
-    seats = 0;
-    location = "";
+Classroom::Classroom(int x, string y) {
+	seats = x;
+	location = y;
 }
 
-void Classroom::setSeats(int x){
-  seats = x;
+void Classroom::setSeats(int x) {
+	seats = x;
 }
 
-int Classroom::getSeats(){
-  return seats;
+int Classroom::getSeats() {
+	return seats;
 }
 
-void Classroom::setLocation(string y){
-  location = y;
+void Classroom::setLocation(string y) {
+	location = y;
 }
 
-string Classroom::getLocation(){
-  return location;
+string Classroom::getLocation() {
+	return location;
 }
