@@ -11,7 +11,7 @@ using namespace std;
 
 void fillVector(vector<Racer>&);
 void printVector(const vector<Racer>&);
-//void printVector2(const vector<Racer>&); /Need help to understand this.
+void printVector2(const vector<Racer>&); //Need help to understand this.
 
 
 int main()
@@ -20,7 +20,7 @@ int main()
 
 	fillVector(racerArray);
 
-	printVector(racerArray);
+	printVector2(racerArray);
 	
 	system("pause");
 
@@ -61,14 +61,14 @@ void printVector(const vector<Racer>& newprintRacer)
 
 }
 
-/*void printVector2(const vector<Racer>& newprintRacer)
+void printVector2(const vector<Racer>& newprintRacer)
 {
 	unsigned int vectorSize = newprintRacer.size();
 
 	for (unsigned int i = 0; i < vectorSize; i++)
 	{
-		cout << newprintRacer[i].displayInfo() << endl;
+		newprintRacer[i].displayInfo();
 	}
 
 }
-*/
+
