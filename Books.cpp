@@ -1,21 +1,22 @@
 #include "Books.h"
 
-void book::setbName(string x)
+void books::setbName(string x)
 {
 bName = x;
 }
-stringbook:: getbName()
+string books:: getbName()
 {
 return bName;
 }
-void book:: setprice (double y)
+void books:: setprice (double y)
+{
 price =y;
 }
-double book:: getprice()
+double books:: getprice()
 {
 return price;
 }
-Books::Books ()	// Contructor - DO NOT RECREATE VARIABLE
+books::books ()	// Contructor - DO NOT RECREATE VARIABLE
 {
 bName = "";
 price= 0.0; 

@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-vector <book> Books (4);
+vector <books> Books (4);
 string bName;
 double price;
-for (int=0; i<4; i++)
+for (int i=0; i<4; i++)
 {
 cout << "Book Title:" << endl;
 cin >> bName;
