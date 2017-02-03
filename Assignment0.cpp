@@ -7,6 +7,7 @@ using namespace std;
 
 void squarevector(vector<NumberManip>&);
 void printnumbers(vector<NumberManip>&);
+int linearSearch(auto data, auto key);//prototype
 
 int main() {
 
@@ -44,4 +45,16 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 		cout << "Number added to itself: " << ManipNumber[i].getAdd() << endl;
 
 	}
+}
+
+int linearSearch(auto Data, auto key)
+{
+	for(int i = 0; i < Data.size(); i++)
+	{
+		if (Data[i] == key)
+		{
+			return i;
+		}
+	}	
+	return -1;
 }
