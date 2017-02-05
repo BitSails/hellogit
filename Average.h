@@ -1,41 +1,23 @@
-#include <string>
-using namespace std;
-
-class Grades {
-
+#ifndef AVERAGE_H
+#define AVERAGE_H
+ 
+class Average {
+     
 public:
-	Grades(double classGrade, int numStudents) {
-		setNum(numStudents);
-		setGrade(classGrade);
-		setAverage();
-}
-
-	void setNum(int numStudents) {
-		num = numStudents;
-	}
-
-	int getNum() const {
-		return num;
-	}
-
-	void setGrade(double classGrade) {
-		sumGrade = classGrade;
-	}
-
-	double getGrade() const {
-		return gradeSum;
-	}
-
-	void setAverage() {
-		average = classGrade / numStudents;
-	}
-
-	double getAverage() const {
-		return average;
-	}
-
+    Average();
+     
+    void setGrade(double);
+    double getGrade();
+     
+    void setNum(int);
+    int getNum();
+     
+    void setAverage(int, double);
+    double getAverage();
+     
 private:
-	int num;
-	double sumGrade;
-	double average;
+    int num;
+    double grade;
+    double average;
 };
+#endif
