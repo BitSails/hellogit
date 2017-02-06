@@ -3,22 +3,12 @@
 using namespace std;
 class Cat{
 	public:
-		Cat(){
-			name=" ";
-			age=0.00;
-		}
-		void setName (string catN){
-			name=catN;
-		}
-		void setAge (float catAge){
-			age=catAge;
-		}
-		string getName(){
-			return name;
-		}
-		float getAge(){
-			return age;
-		}
+		Cat();
+		
+		void setName (string catN);
+		void setAge (float catAge);
+		string getName();
+		float getAge();
 	private:
 		string name;
 		float age;
