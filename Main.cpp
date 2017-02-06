@@ -9,7 +9,7 @@ void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
 int linearSearch(vector<Student> newClass, string name)
 
-void main() {
+int main() {
 	
 	
 	
@@ -37,7 +37,7 @@ void main() {
 
 	
 	
-	return ;
+	return 0;
 	
 }
 
