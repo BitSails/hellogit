@@ -11,7 +11,7 @@ void printnumbers(vector<NumberManip>&);
 int main() {
 
 	vector<NumberManip> NumManip;
-	SquareAndAddition(NumManip);
+	NumberManip(NumManip);
 	printnumbers(NumManip);
 	return 0;
 
