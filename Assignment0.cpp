@@ -20,8 +20,7 @@ int main() {
 void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 	int number1;
 	double number2;
-	
-	
+
 		NumberManip.setSquareNum(20);
 		NumberManip.setAdditionNum(2.3);
 		NumManip.push_back(NumberManip);
@@ -29,7 +28,6 @@ void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 		NumberManip.setSquareNum(4);
 		NumberManip.setAdditionNum(5.5);
 		NumManip.push_back(NumberManip);
-		cout << endl;
 	
 }
 
@@ -38,7 +36,7 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 	int size = ManipNumber.size();
 	for (int i = 0; i < size; i++) {
 		cout << "Square Number: " << ManipNumber[i].getSquare() << endl;
-		cout << "Addition Number: " << ManipNumber[i].getAdd() << endl;
+		cout << "Addition Number: " << ManipNumber[i].getAddition() << endl;
 }
 
 }
