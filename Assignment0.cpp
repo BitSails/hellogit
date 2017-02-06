@@ -40,3 +40,5 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 		cout << "Square Number: " << ManipNumber[i].getSquare() << endl;
 		cout << "Addition Number: " << ManipNumber[i].getAdd() << endl;
 }
+
+}
