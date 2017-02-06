@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void squarevector(vector<NumberManip>&);
+void SquareAndAddition(vector<NumberManip>&);
 void printnumbers(vector<NumberManip>&);
 
 int main() {
