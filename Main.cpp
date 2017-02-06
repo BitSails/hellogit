@@ -16,7 +16,7 @@ int main() {
 	vector<Student> myclass;
 	
 	fillVector(myclass);
-	printVector(myclass) ;
+	
 	
 	cout << "Please enter the name of the student you would like to search" << endl;
 	cin >> name;
