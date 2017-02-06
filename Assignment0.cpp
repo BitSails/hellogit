@@ -11,16 +11,13 @@ void printnumbers(vector<NumberManip>&);
 int main() {
 
 	vector<NumberManip> NumManip;
-	squarevector(NumManip);
-
+	SquareAndAddition(NumManip);
 	printnumbers(NumManip);
 	return 0;
 
 }
 
-
-
-void squarevector(vector<NumberManip>& ManipNumber) {
+void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 	int number1;
 	double number2;
 	
@@ -42,6 +39,4 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 	for (int i = 0; i < size; i++) {
 		cout << "Square Number: " << ManipNumber[i].getSquare() << endl;
 		cout << "Addition Number: " << ManipNumber[i].getAdd() << endl;
-
-
 }
