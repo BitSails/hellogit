@@ -7,11 +7,11 @@ using namespace std;
 
 void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
+int linearSearch(vector<Student> newClass, string name)
 
-
-int main() {
+void main() {
 	
-	int linearSearch(vector<Student> newClass, string name)
+	
 	
 	string result;
 	string key;
@@ -37,7 +37,7 @@ int main() {
 
 	
 	
-	return 0;
+	return ;
 	
 }
 
