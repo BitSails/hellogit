@@ -30,7 +30,7 @@ void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 		NumberManip.setAdditionNum(5.5);
 		NumManip.push_back(NumberManip);
 		cout << endl;
-	}
+	
 }
 
 void printnumbers(vector<NumberManip>& ManipNumber) {
