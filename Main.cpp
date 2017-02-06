@@ -29,7 +29,7 @@ int main() {
 	{
 		result = linearSearch(myclass,  name);
 		cout << " " << key << "was ";
-		if (result != name)
+		if (result == .1)
 			cout << " not found";
 		else
 			cout << " found" << result;
@@ -46,7 +46,7 @@ int linearSearch(vector<Student> newClass, string name)
 		
 		for(int i = 0; i < newClass.size(); i ++)
 		{
-			if (newClass[i] == name)//we found it
+			if (newClass[i] == "name")//we found it
 			{
 				return i;//return its location
 			}
