@@ -7,15 +7,29 @@ using namespace std;
 
 void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
-int linearSearch(vector<Student> newClass, auto key);
+int linearSearch(vector<Student> myclass, auto key);
 
 int main() {
-
+	
+	string result;
+	
 	vector<Student> myclass;
 	
-	fillVector(myclass);
-	printVector(myclass) ;
-	linearSearch(myclass,  key);
+	
+	
+	cout << "Please enter the name of the student you would like to search" << endl;
+	cin >> name;
+	while(name != "#")
+	{
+		result = linearSearch(myclass,  name);
+		cout << " " << name << "was ";
+		if (result == .1)
+			cout << " not found";
+		else
+			cout << " found" << result;
+	}
+
+	
 	
 	return 0;
 	
