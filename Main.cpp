@@ -7,12 +7,13 @@ using namespace std;
 
 void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
-
+int linearSearch(vector<Student> newClass, string name)
 
 int main() {
 	
 	string result;
 	string key;
+	string name;
 	
 	vector<Student> myclass;
 	
