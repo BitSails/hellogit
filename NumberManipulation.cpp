@@ -16,7 +16,7 @@ int NumberManip::getSquare() {
 }
 
 double NumberManip::getAddition(){
-	additionnum2 = num2 + num2;
+	addition = num2 + num2;
 	return addition;
 }
 
