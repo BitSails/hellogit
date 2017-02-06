@@ -7,34 +7,27 @@ using namespace std;
 
 void squarevector(vector<NumberManip>&);
 void printnumbers(vector<NumberManip>&);
-int linearSearch(auto data, auto key);//prototype
 
 int main() {
 
 	vector<NumberManip> NumManip;
-	squarevector(NumManip);
-
+	NumberManip(NumManip);
 	printnumbers(NumManip);
 	return 0;
 
 }
 
+void SquareAndAddition(vector<NumberManip>& ManipNumber) {
+	
 
-
-void squarevector(vector<NumberManip>& ManipNumber) {
-	int number1;
-	double number2;
-
-	for (int i = 1; i <= 2; i++) {
-
-		cout << "Please enter number 1 to be squared. " << endl;
-		cin >> number1;
-		cout << "Please enter number 2 to be added to itself. " << endl;
-		cin >> number2;
-		NumberManip newSquare(number1, number2);
-		ManipNumber.push_back(newSquare);
-		cout << endl;
-	}
+		NumberManip.setSquareNum(20);
+		NumberManip.setAdditionNum(2.3);
+		NumManip.push_back(NumberManip);
+		
+		NumberManip.setSquareNum(4);
+		NumberManip.setAdditionNum(5.5);
+		NumManip.push_back(NumberManip);
+	
 }
 
 void printnumbers(vector<NumberManip>& ManipNumber) {
@@ -42,19 +35,7 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 	int size = ManipNumber.size();
 	for (int i = 0; i < size; i++) {
 		cout << "Square Number: " << ManipNumber[i].getSquare() << endl;
-		cout << "Number added to itself: " << ManipNumber[i].getAdd() << endl;
-
+		cout << "Addition Number: " << ManipNumber[i].getAddition() << endl;
+		
 	}
-}
-
-int linearSearch(auto Data, auto key)
-{
-	for(int i = 0; i < Data.size(); i++)
-	{
-		if (Data[i] == key)
-		{
-			return i;
-		}
-	}	
-	return -1;
 }
