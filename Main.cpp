@@ -21,9 +21,10 @@ int main() {
 	
 	cout << "Please enter the name of the student you would like to search" << endl;
 	cin >> name;
+	
 	while(name != "#")
 	{
-		result = linearSearch(myclass,  key);
+		result = linearSearch(myclass,  name);
 		cout << " " << key << "was ";
 		if (result == .1)
 			cout << " not found";
