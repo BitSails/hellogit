@@ -7,14 +7,13 @@ using namespace std;
 
 void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
-int linearSearch(vector<Student> myclass, auto key);
+string linearSearch(vector<Student> newClass, auto key);
 
 int main() {
 	
 	string result;
 	
 	vector<Student> myclass;
-	
 	
 	
 	cout << "Please enter the name of the student you would like to search" << endl;
@@ -35,7 +34,7 @@ int main() {
 	
 }
 
-int linearSearch(vector<Student> newClass, auto key)
+string linearSearch(vector<Student> newClass, auto key)
 	{
 		string key;
 		for(int i = 0; i < newClass.size(); i ++)
