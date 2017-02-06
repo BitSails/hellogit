@@ -29,7 +29,7 @@ int main() {
 	{
 		result = linearSearch(myclass,  name);
 		cout << " " << key << "was ";
-		if (result == ".1")
+		if (result != name)
 			cout << " not found";
 		else
 			cout << " found" << result;
