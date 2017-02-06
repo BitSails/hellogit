@@ -15,15 +15,15 @@ int NumberManip::getSquare() {
 	return square;
 }
 
-double NumberManip::getAdd(){
+double NumberManip::getAddition(){
 	newnum2 = num2 + num2;
 	return newnum2;
 }
 
-void NumberManip::setNum(int number1){
+void NumberManip::setSquareNum(int number1){
 	num1 = number1;
 }
 
-void NumberManip::setNum2(double number2){
+void NumberManip::setAdditionNum(double number2){
 	num2 = number2;
 }
