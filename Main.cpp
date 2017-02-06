@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomainip>
 #include <string>
 #include <vector>
 #include "Student.h"
@@ -29,7 +30,7 @@ int main() {
 	{
 		result = linearSearch(myclass,  name);
 		cout << " " << key << "was ";
-		if (result == .1)
+		if (result == ".1")
 			cout << " not found";
 		else
 			cout << " found" << result;
