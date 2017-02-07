@@ -23,7 +23,7 @@ cout<<Vec.size()<<endl;
 for(int i=0;i<Vec.size();i++){
 cout<<Vec[i].getNum()<<"."<<Vec[i].getDeci()<<endl;
 }
-}
+
 system("pause");
 return 0;
 }
