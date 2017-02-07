@@ -26,8 +26,11 @@ int main()
 	
 	
 	// Implemented the linear function search from the algos lab.
-	// Commit out from here to "printVector2" to gain back the orginal 
+	// Comment out from here to "printVector2" to gain back the orginal 
 	//implementation of this program.
+	
+	//Added a linear search algorithm; which searches the vector once filled for matching
+	//Racer's names, and returns the index of the name.
 	
 	cout<<endl<<"To end input type the #-character (followed by Enter)"<<endl<<endl;
 	cout<<"Enter a value to search for: ";
