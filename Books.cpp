@@ -1,7 +1,8 @@
 #include "Books.h"
 #include <string>
+using namespace std;
 
-Books:: Books()
+Books::Books()
 {
 	fee=0;
 }
@@ -28,3 +29,5 @@ float Books::getFee()
 {
 	return fee;	
 }
+
+

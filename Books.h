@@ -1,17 +1,21 @@
+#include<string>
+using namespace std;
+
 
 class Books
 {
 	public:
 		Books();
 		
-		void setName();
+		void setName(string);
 		
 		string getName();
 		
-		void setFee();
+		void setFee(int);
 	
 		float getFee();
 
+		
 
 
 		
