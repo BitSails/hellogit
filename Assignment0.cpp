@@ -9,9 +9,9 @@ void SquareAndAddition(vector<NumberManip>&);
 void printnumbers(vector<NumberManip>&);
 
 int main() {
-
+	
 	vector<NumberManip> NumManip;
-	NumberManip(NumManip);
+	SquareAndAddition(NumManip);
 	printnumbers(NumManip);
 	return 0;
 
