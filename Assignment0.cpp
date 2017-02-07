@@ -22,11 +22,11 @@ void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 		NumberManip val1;
 		val1.setSquareNum(20);
 		val1.setAdditionNum(2.3);
-		ManipNumber.push_back(NumberManip);
+		ManipNumber.push_back(val1);
 		
 		val1.setSquareNum(4);
 		val1.setAdditionNum(5.5);
-		ManipNumber.push_back(NumberManip);
+		ManipNumber.push_back(val1);
 	
 }
 
