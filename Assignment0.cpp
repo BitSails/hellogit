@@ -34,8 +34,8 @@ void printnumbers(vector<NumberManip>& ManipNumber) {
 
 	int size = ManipNumber.size();
 	for (int i = 0; i < size; i++) {
-		cout << "Square Number: " << ManipNumber[i].getSquare() << endl;
-		cout << "Addition Number: " << ManipNumber[i].getAddition() << endl;
+		cout << "Number when squared: " << ManipNumber[i].getSquare() << endl;
+		cout << "Number when added to itself: " << ManipNumber[i].getAddition() << endl;
 		
 	}
 }
