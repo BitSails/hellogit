@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef SQUARE_H
-#define SQUARE_H
+#ifndef NUMBERMANIP_H
+#define NUMBERMANIP_H
 
 #include <iostream>
 #include <string>
@@ -23,4 +23,4 @@ private:
 	double addition;
 };
 
-#endiff
+#endif
