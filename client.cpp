@@ -23,19 +23,26 @@ cout<<Vec.size()<<endl;
 for(int i=0;i<Vec.size();i++){
 cout<<Vec[i].getNum()<<"."<<Vec[i].getDeci()<<endl;
 }
-linearSearch(auto data,auto num);
+cout<<"Enter a value to be searched"<<endl;
+cin>>num;
+while(key != 0)
+{
+num=linearSearch(data,key);
+cout<<" "<<key<<"was";
+if(num == -1)
+cout<<"not found";
+else
+cout<<"found at index"<<num;
+}
 system("pause");
 return 0;
 }
-int linearSearch(auto data,auto num)
+int linearSearch(auto data,auto key)
 {
 for(int i=0;i<data.size();i++)
 {
-cout<<"Enter value to search"<<endl;
-cin>>num;
 if(data[i].getNum()==num)
 {
-cout<<"Value has been found"<<endl;
 return i;
 }
 }
