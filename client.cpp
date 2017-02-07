@@ -23,6 +23,7 @@ cout<<Vec.size()<<endl;
 for(int i=0;i<Vec.size();i++){
 cout<<Vec[i].getNum()<<"."<<Vec[i].getDeci()<<endl;
 }
+linearSearch(auto data,auto num);
 system("pause");
 return 0;
 }
@@ -31,6 +32,7 @@ int linearSearch(auto data,auto num)
 for(int i=0;i<data.size();i++)
 {
 cout<<"Enter value to search"<<endl;
+cin>>num;
 if(data[i].getNum()==num)
 {
 cout<<"Value has been found"<<endl;
