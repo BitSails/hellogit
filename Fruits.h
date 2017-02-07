@@ -4,7 +4,7 @@
 class Fruits
 {
 public:
-	explicit Fruits(std::string fruitName)
+	explicit Fruits(std::string fruitName);
 	int getNumFruits();
 	void setNumFruits();
 	void setName(std::string fruitName);
