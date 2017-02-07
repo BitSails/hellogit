@@ -7,6 +7,7 @@ int main()
 {
 LabOne ob1;
 vector<LabOne>Vec;
+int num,key;
 ob1.setNum(1);
 ob1.setDeci(54);
 Vec.push_back(ob1);
