@@ -19,7 +19,7 @@ int main() {
 
 void SquareAndAddition(vector<NumberManip>& ManipNumber) {
 	
-		NumberManip val1
+		NumberManip val1;
 		val1.setSquareNum(20);
 		val1.setAdditionNum(2.3);
 		ManipNumber.push_back(NumberManip);
