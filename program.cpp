@@ -51,9 +51,9 @@ int main()
 		
 	cin>>search_key;
   
-    while(search_key != -2)//perform searches until sentinel entered
+    while(search_key != -1)//perform searches until sentinel entered
     {
-		for (int i= 0; i<details.size(); i++)
+		//for (int i= 0; i<details.size(); i++)
 			result = linearSearch(details,search_key);
 		
 		
