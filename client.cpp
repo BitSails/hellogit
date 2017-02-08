@@ -8,7 +8,7 @@
 using namespace std;
 
 void addVector(vector<Candidate>&);
-void printVector(const vector<Candidate> &);
+void printVector(vector<Candidate> &);
 
 int linearSearch(auto data, auto key);//prototype
 
@@ -36,9 +36,9 @@ int main()
 
 
 // add objects to vector
-void addVector()
+void addVector(vector <Candidate>& newCandidate)
 {
-	vector<Candidate> newCandidate;
+	
 	string cand;
 	int votes;
 	
@@ -50,15 +50,15 @@ void addVector()
 		cout << "Enter Number of Votes: ";
 		cin >> votes;
 
-		Candidate newCandidate(cand, votes);
-		newCandidate.push_back(cand, votes);
+		Candidate candidates(cand, votes);
+		newCandidate.push_back({cand, votes});
 		cout << endl;
 	}
 }
 
 
 //print contents of vector
-void printVector(const vector<Candidate> newCandidate)
+void printVector( vector<Candidate> newCandidate)
 {
 	for (int i = 0; i < newCandidate.size(); i++)
 	{
