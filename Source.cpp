@@ -4,7 +4,7 @@
 #include "Phone.h" 
 using namespace std;
 
-int linearSearch(auto data, auto key);
+int linearSearch(auto myPhone, auto key);
 
 int main(){
 	string type;
@@ -29,7 +29,7 @@ int main(){
 	
 	while(search_key != "#")
     {
-        answer = linearSearch(type,search_key);
+        answer = linearSearch(myPhone,search_key);
 
         cout<<"  '"<<search_key<<"' was ";
 
@@ -50,9 +50,9 @@ cout<<"My vector contains:"<<myPhone.size();
 */
 }
 
-int linearSearch(auto Data, auto key){
-	  for (int i=0; i<Data.size(); i++){
-		  if (Data[i]==key){
+int linearSearch(auto myPhone, auto key){
+	  for (int i=0; i<myPhone.size(); i++){
+		  if (myPhone[i]==key){
 			  return i;
 			  }
 		  }
