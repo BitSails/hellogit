@@ -59,11 +59,9 @@ int main ()
 
 int linearSearch(auto data, auto key)
 {
-	string a;
 	for (int i=0; i<data.size(); ++i)
 	{
-		a = data[i].getName();
-		if (a==key)
+		if (data[i].getName()==key)
 			return i;
 	}
 	return -1; //not found
