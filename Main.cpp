@@ -49,9 +49,9 @@ int main( )
 	 result = linearSearch(acctList, search_key);
 	 
 	 if (result == -1)
-          cout<<"not found";
-        else
-          cout<<"found at index "<<result<<endl<<endl;
+		cout<<"not found";
+     else
+        cout<<"found at index "<<result<<endl<<endl;
 	
 }
 
