@@ -1,5 +1,3 @@
-#ifndef MYCLASS_CPP
-#define MYCLASS_CPP
 #include <iostream>
 #include "class.h"
 #include <string>
@@ -30,6 +28,4 @@ int Class::getGrade ()
 {
   return grade;
 }
-
-#endif
 
