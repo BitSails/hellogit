@@ -5,12 +5,12 @@ using namespace std;
 
 class phone{
 private:
-string type;
-double cost;
+string phoneType;
+double phoneCost;
 
   
 public:
-Phone (string = "", double = 0.0);
+phone (string = "", double = 0.0);
   void setPhoneType(string n);
   string getPhoneType();
   void setPhoneCost(double c);

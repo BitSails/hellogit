@@ -1,24 +1,50 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Header.h" 
+#include "Phone.h" 
 using namespace std;
 
+int linearSearch(auto data, auto key);
+
 int main(){
-  string type;
-  double cost;
-/*
-  phone Apple;  
-  phone Samsung;
-  phone Huawei;
-  phone Htc;
-  phone myPhone;
-*/
+	string type;
+	string search_key;
+    double cost;
+    int answer;
+
  
-  vector <phone> myPhone/*(iPhone, Htc, Samsung , Huawei)*/;
-	cout<<"Enter a brad of phone" ;
+	vector <phone> myPhone;
+	cout<<"Enter a brand of phone" ;
 	cin>>type;
 	myPhone.push_back(type);
+	
+	while (type != "#"){
+		myPhone.push_back(type);
+		cin>>type;
+	}
+	
+	cout<< "Number of types entered ="<<myPhone.size()<<endl;
+	cout<<" Enter search key:";
+	cin>>search_key;
+	
+	while(search_key != "#")
+    {
+        answer = linearSearch(type,search_key);
+
+        cout<<"  '"<<search_key<<"' was ";
+
+        if (answer == -1)
+          cout<<"not found";
+        else
+          cout<<"found at index "<<answer;
+
+
+        cout<<endl<<endl<<"Enter a value to search for: ";
+        cin>>search_key; 
+    }
+
+	
+	
 /*
 cout<<"My vector contains:"<<myPhone.size();
 */

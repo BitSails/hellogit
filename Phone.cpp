@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#inlcude "Header.h"
+#include "Phone.h"
 using namespace std;
 
-phone::Phone (string n , double c){
+phone::phone (string n , double c){
 phoneType= n;
 phoneCost= c;
 }
