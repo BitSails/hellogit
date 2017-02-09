@@ -25,4 +25,3 @@ void Student::set_StudentAge(int age){
 int Student::get_StudentAge() const{
 	return student_Age;
 }
-

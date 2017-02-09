@@ -7,9 +7,14 @@
 
 using namespace std;
 
+
+int linearSearch(auto data, auto key);
+
 int main(){
 
 	vector<Student> vec;                   // declare a vector containing objects of Student Class
+	int result;
+	string search_key;
 
 	// stud.set_StudentName("ShockWave");     // set student name
 	// stud.set_StudentAge(22);               // set student age
@@ -30,14 +35,46 @@ int main(){
 	//stud.set_StudentAge(27);
 	vec.push_back({"LockDown", 27});                    // store objects on the fourth index of vector
 
-    // display the size of the vector
+    	// display the size of the vector
 	cout << "The vector of objects now has the size of " << vec.size() << "\n\n";
 
-    // iterate through each index of the vector and display the student name and age
-    cout << "Student Name" << "\t\t" << "Student Age" << "\n\n";
+    	// iterate through each index of the vector and display the student name and age
+    	cout << "Student Name" << "\t\t" << "Student Age" << "\n\n";
 	//for(int i = 0; i < vec.size(); i++){
-	for(auto stud:vec){ // for each student(stud) in vector 
+	for(auto stud:vec){ // for each student(stud) in vector
 
         	cout << stud.get_StudentName() << "\t\t" << stud.get_StudentAge() << endl;
 	}
+
+        cout << "Search for a word in the vector, end program by inserting the $: " << endl << ">> ";
+        cin >> search_key;
+
+    	while(search_key != "$")//perform searches until sentinel entered
+    	{
+            result = linearSearch(vec, search_key);
+
+            cout <<"  '" << search_key << "' requested: ";
+
+            if (result == -1)
+                cout << "not found" << endl << endl;
+            else
+                cout << "found at index " << result << endl << endl;
+	
+		
+	   cout << "Search for a word in the vector, end program by inserting the $: " << endl << ">> ";
+           cin >> search_key;
+
+        }
+}
+
+// linear search function
+int linearSearch(auto data, auto key)
+{
+	for(int i = 0; i < data.size(); i++){
+		if(data[i].get_StudentName() == key){
+			return i;
+		}
+	}
+
+	return -1;
 }
