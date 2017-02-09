@@ -12,7 +12,7 @@ int main()
 	sqr.setWid(4.5);
 	Vec.push_back(sqr);
 	sqr.setLen(5);
-	sqr.setWid(2.5)
+	sqr.setWid(2.5);
 	Vec.push_back(sqr);
 	sqr.setLen(7);
 	sqr.setWid(6.5);

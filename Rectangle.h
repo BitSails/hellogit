@@ -11,7 +11,7 @@ class Rectangle
 
 		void setLen(int);
 		int getLen();
-		void setWid(int);
-		float getWid(float);
+		void setWid(float);
+		float getWid();
 };
 #endif
