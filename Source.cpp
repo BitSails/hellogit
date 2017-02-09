@@ -52,13 +52,12 @@ cout<<"My vector contains:"<<myPhone.size();
 
 int linearSearch(auto myPhone, auto key){
 	  for (int i=0; i<myPhone.size(); i++){
-		  if (myPhone[i]==key){
+		  if (myPhone[i].getPhoneType() == key){
 			  return i;
 			  }
 		  }
 		  return -1;
 	  }
- 
  
   
 
