@@ -11,13 +11,13 @@ class cuisine{
   public:
     cuisine(string="",int=0);
 
-    void set_type_name(string dish);
+    void settypeName(string dish);
    
-    void set_dish_num(int num);
+    void setdishNum(int num);
       
-    std::string get_type_name();
+    std::string gettypeName();
     
-    int get_dish_num();
+    int getdishNum();
     
 };//class
 #endif

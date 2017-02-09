@@ -4,12 +4,25 @@
 #include "cuisine.h"
 using namespace std;
 
+int linearSearch(auto data, auto key)
+{
+	for (int i=0; i<data.size(); i++)
+	{
+		if (data[i].getdishNum==key)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+
 int main()
 {
    string dish;
-
+   
    int num;
-
+   int search_key;
    vector<cuisine> restaurant;
    cuisine order;
 
@@ -20,25 +33,27 @@ int main()
    
       cin >> dish;
 
-      order.set_type_name(dish);
+      order.settypeName(dish);
 
       cout << "Enter the number of dishes you have of this cuisine." <endl;
 
       cin >> num;
       
-      order.set_dish_num(num);
+      order.setdishNum(num);
 
       restaurant.push_back(order);
    
-      //restaurant[i].set_type_name(dish);
-
-      //restaurant[i].set_dish_num(num);
+      
    }
+   cout <<" Enter an interger for a search key";
+   cin >> search_key;
    
-   for(int i=0;i<4;i++)
+  cout << linearSearch(restaurant,search_key);
+   
+   /*for(int i=0;i<4;i++)
    {
-       cout << restaurant[i].get_type_name() << ":" << restaurant[i].get_dish_num() << endl;
-   }
+       cout << restaurant[i].gettypeName() << ":" << restaurant[i].getdishNum() << endl;
+   }*/
    
    return 0;
 
