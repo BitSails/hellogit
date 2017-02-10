@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
  
+int linearSearch(auto data, auto key);
+ 
 int main() {
      
     Average object;
@@ -33,4 +35,13 @@ int main() {
     }
     //system("Pause");
     return 0;
+}
+
+int linearSearch (auto data, auto grade) {
+	for (int i = 0; i < data.size(); i++) {
+		if (data[i].getGrade() == grade) {
+			return i;
+		}
+	}
+	return -1;
 }
