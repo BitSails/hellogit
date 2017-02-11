@@ -10,7 +10,7 @@ int linearSearch(auto data, auto key)
 {
   for(int x=0; x < data.size(); x++)
    {
-	   if(data.get_anime_num==key)
+	   if(data[x].get_anime_num()==key)
 	   {
 		   return x;
 	   }
@@ -45,6 +45,7 @@ int main()
 
      }//first for
      
+     //search
      cout >> "Please enter a value (integer) to be searched.";
      cin << search_key;
      
