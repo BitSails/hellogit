@@ -49,7 +49,7 @@ int main()
    cout <<" Enter an interger for a search key"<<endl;
    cin >> search_key;
    
-  cout <<search_key <<" is in position: "<< linearSearch(restaurant.getdishNum,search_key);
+  cout <<search_key <<" is in position: "<< linearSearch(restaurant,search_key);
    
    /*for(int i=0;i<4;i++)
    {
