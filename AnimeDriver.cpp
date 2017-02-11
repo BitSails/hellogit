@@ -55,7 +55,7 @@ int main()
       result = linearSearch (animestore,search_key); 
       
       
-      cout << " " << search_key << " was ";
+      cout << " " << search_key << " was";
       
        if (result == -1)
          cout<<" not found.";
