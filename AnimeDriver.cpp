@@ -55,25 +55,25 @@ int main()
       result = linearSearch (animestore,search_key); 
       
       
-      cout << search_key << "was ";
+      cout " " << search_key << " was ";
       
        if (result == -1)
          cout<<" not found.";
        
        else
-        cout<<" found at index "<<result;
+        cout<<" found at index "<<result << ".";
 
 
         cout<<endl<<endl<<"Enter another value to be searched for, please: ";
         cin>>search_key; 
     }//search
     
-    for(int x=0;x<4;x++)
+    /*for(int x=0;x<4;x++)
      {//second for
          cout << "The anime genre and number of anime you would like to look up." << endl;
 
          cout << animestore[x].get_anime_genre() << " :- " << animestore[x].get_anime_num() << endl;
-      }//second for
+      }//second for*/
 
 return 0;
 
