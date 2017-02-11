@@ -10,7 +10,7 @@ int linearSearch(auto data, auto key)
 {
   for(int x=0; x < data.size(); x++)
    {
-	   if(data[x].get_anime_genre()==key)
+	   if(data[x].get_anime_num()==key)
 	   {
 		   return x;
 	   }
@@ -23,7 +23,7 @@ int main()
 
     string genre;
     int num;
-    string search_key;
+    int search_key;
     int result;
 
     vector<Anime>animestore;
