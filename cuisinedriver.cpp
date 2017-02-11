@@ -4,11 +4,12 @@
 #include "cuisine.h"
 using namespace std;
 
+int linearSearch(auto data, auto key);//prototype
 int linearSearch(auto data, auto key)
 {
 	for (int i=0; i<data.size(); i++)
 	{
-		if (data[i].getdishNum==key)
+		if (data[i].getdishNum()==key)
 		{
 			return i;
 		}
@@ -35,7 +36,7 @@ int main()
 
       order.settypeName(dish);
 
-      cout << "Enter the number of dishes you have of this cuisine." <endl;
+      cout << "Enter the number of dishes you have of this cuisine." <<endl;
 
       cin >> num;
       
@@ -45,10 +46,10 @@ int main()
    
       
    }
-   cout <<" Enter an interger for a search key";
+   cout <<" Enter an interger for a search key"<<endl;
    cin >> search_key;
    
-  cout << linearSearch(restaurant,search_key);
+  cout <<search_key <<" is in position: "<< linearSearch(restaurant.getdishNum,search_key);
    
    /*for(int i=0;i<4;i++)
    {
