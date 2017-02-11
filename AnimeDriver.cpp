@@ -50,7 +50,7 @@ int main()
      cout << "Please enter a value (integer) to be searched.";
      cin >> search_key;
      
-     while(input != "#")
+     while(search_key != "#")
     {
       result = linearSearch (animestore,search_key); 
       
