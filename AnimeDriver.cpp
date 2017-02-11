@@ -10,7 +10,7 @@ int linearSearch(auto data, auto key)
 {
   for(int x=0; x < data.size(); x++)
    {
-	   if(data[x].get_anime_num==key)
+	   if(data.get_anime_num==key)
 	   {
 		   return x;
 	   }
