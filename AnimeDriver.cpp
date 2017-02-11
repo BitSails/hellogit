@@ -10,7 +10,7 @@ int linearSearch(auto data, auto key)
 {
   for(int x=0; x < data.size(); x++)
    {
-	   if(data[x].get_anime_num()==key)
+	   if(data[x].get_anime_genre()==key)
 	   {
 		   return x;
 	   }
@@ -23,7 +23,8 @@ int main()
 
     string genre;
     int num;
-    int search_key;
+    string search_key;
+    int result;
 
     vector<Anime>animestore;
     Anime lookup;
@@ -46,10 +47,14 @@ int main()
      }//first for
      
      //search
-     cout >> "Please enter a value (integer) to be searched.";
-     cin << search_key;
+     cout << "Please enter a value (integer) to be searched.";
+     cin >> search_key;
      
-     cout >> linearSearch(animestore,search_key);
+    
+     cout >> linearSearch(animestore,search_key); 
+    
+     
+     
 
      /*for(int x=0;x<4;x++)
      {//second for
