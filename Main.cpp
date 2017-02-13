@@ -54,7 +54,7 @@ string linearSearch(vector<Student> newClass, string name)
 				return name;//return its location
 			}
 		}//end for
-		return -1;//element not found
+		return "error";//element not found
 	}
 
 
