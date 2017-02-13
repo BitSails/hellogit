@@ -34,7 +34,7 @@ int main() {
 		
 		result = linearSearch(myclass,  name);
 		cout << " " << name << "was ";
-		if ( result == i )
+		if ( result == name )
 			cout << " found";
 		else
 			cout << " not found" << result;
