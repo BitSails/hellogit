@@ -51,7 +51,7 @@ int linearSearch(vector<Student> newClass, string name)
 		{
 			if ( newClass[i].getName() == name )//we found it
 			{
-				return i;//return its location
+				return name;//return its location
 			}
 		}//end for
 		return -1;//element not found
