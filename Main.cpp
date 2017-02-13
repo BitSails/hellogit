@@ -34,10 +34,13 @@ int main() {
 		
 		result = linearSearch(myclass,  name);
 		cout << " " << name << "was ";
-		if ( result == name )
+		if ( result == i )
 			cout << " found";
 		else
 			cout << " not found" << result;
+		
+		cout << "Would you like to search for a student? y = yes , n = no" << endl;
+		cin >> choice;
 	}
 
 	return 0;
