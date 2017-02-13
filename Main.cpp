@@ -16,27 +16,30 @@ int main() {
 	string result;
 	string key;
 	string name;
-	
+	char choice;
 	vector<Student> myclass;
 	
 	fillVector(myclass);
 	printVector(myclass);
 	
-	cout << "Please enter the name of the student you would like to search" << endl;
-	cin >> name;
+	cout << "Would you like to search for a student? y = yes , n = no" << endl;
+	cin >> choice;
+
 	
-	while(name != "#")
+	
+	while(choice == 'y')
 	{
+		cout << "Please enter the name of the student you would like to search" << endl;
+		cin >> name;
+		
 		result = linearSearch(myclass,  name);
-		cout << " " << key << "was ";
+		cout << " " << name << "was ";
 		if ( result == name )
 			cout << " found";
 		else
 			cout << " not found" << result;
 	}
 
-	
-	
 	return 0;
 	
 }
