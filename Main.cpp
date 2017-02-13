@@ -7,7 +7,7 @@ using namespace std;
 
 void fillVector(vector<Student> newClass) ;
 void printVector(const vector<Student> newClass);
-string linearSearch(vector<Student> newClass, string name);
+int linearSearch(vector<Student> newClass, string name);
 
 int main() {
 	
@@ -44,17 +44,17 @@ int main() {
 	
 }
 
-string linearSearch(vector<Student> newClass, string name)
+int linearSearch(vector<Student> newClass, string name)
 	{
 		
 		for(int i = 0; i < newClass.size(); i ++)
 		{
 			if ( newClass[i].getName() == name )//we found it
 			{
-				return name;//return its location
+				return i;//return its location
 			}
 		}//end for
-		return "error";//element not found
+		return -1;//element not found
 	}
 
 
