@@ -1,28 +1,37 @@
-#include<string>
-using namespace std;
 
+#ifndef BOOKS_H
+#define BOOKS_H
+
+#include <iostream>
+#include <string>
+
+using namespace std;                                                            
 
 class Books
 {
+	
 	public:
 		Books();
+
+		Books(string, int);
 		
 		void setName(string);
 		
-		string getName();
+		string getName() const;
 		
 		void setFee(int);
 	
-		float getFee();
+		double getFee() const;
 
 		
 
 
-		
 
 	private:
 		string name;
-		float fee;
+		double fee;
 		
 		
 };
+
+#endif
