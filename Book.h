@@ -1,36 +1,17 @@
-#include<iostream>
-using namespace std;
-
-#include<string>
-
+#ifndef BOOK_H
+#define BOOK_H
 
 class Book
 {
+	public:
+	void setBookname();
+	void setAmount();
+
+	
 	private:
-int amount;
-string bookname;
-
-public()
-{bookname=" ";
-	amount=0;}
-	
-	void setBookname (string n)
-	{bookname= n;}
-	string getBookname()
-	{return bookname;}
-	
-	void setAmount (int a)
-	{amount =a;}
-	int getAmount()
-	{return amount;}
-	
-	void displayInfo()
-	{cout<<"Title:"<<bookname<<endl;
-		cout <<"Amount of books:"<<amount<<endl;
-	}
+	int amount;
+	std::string bookname;
 };
+#endif
 
 	
-	
-	
-	}
