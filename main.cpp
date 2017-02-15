@@ -8,17 +8,20 @@ int main()
 {
 	string title;
 	int amt;
+	Book i;
 	vector<Book>stock;
 	for (int x=0;x<4; x++){
-		cout<< "Enter book title and amount of books";
+		cout<< "Enter book title and amount of books  ";
 		cin>> title>>amt;
-		stock.push_back.setBookname(title);
-		stock.push_back.setAmount(amt);
+		
+		i.setBookname(title);
+		i.setAmount(amt);
+		stock.push_back(i);
 		}
 	for (int y=0;y < 4;y++){
-	stock.push_back.displayInfo}
+	stock[y].displayInfo();}
 	
-	
+	return 0;
 	
 	
 	}
