@@ -2,7 +2,6 @@
 
 // including header file for access to Student class
 #include "student.h"
-#include <string>
 
 
 // Implementing the member function prototypes declared in class Students
