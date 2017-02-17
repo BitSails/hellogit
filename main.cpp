@@ -9,15 +9,56 @@
 using namespace std;
 void fillvector(vector<Winners>&);
 void printvector(vector<Winners>&);
+int linearSearch(vector<Winners> contestants, string key);//prototype
 
 
 
 int main(){
+	int result;
+	string search_key, input;
 	vector<Winners> contestants;
 	fillvector(contestants);
 	printvector(contestants);
+	cout << "To end input type the #-character (followed by Enter)" << endl;
+	 cout << "Enter a value to search for: " ;
 
-	system("pause");
+
+	 cin >> search_key;
+
+	 while (search_key != "#")//perform searches until sentinel entered
+	 {
+		 result = linearSearch(contestants, search_key);
+
+		 cout << "  '" << search_key << "' was ";
+
+		 if (result == -1){
+			 cout << "not found";
+		 }
+		 else {
+			 cout << "found at index " << result << endl;
+		 }
+	 
+		 
+		 
+
+
+		 cout << "Enter a value to search for: " << endl;
+		 cin >> search_key;
+	 }
+
+	 cout << "Program \"search it\" is now finished."  << endl;
+
+
+
+
+
+cout << "Program \"search it\" is now finished." << endl;
+
+
+	
+	
+
+	//system("pause");
 	return 0;
 }
 void fillvector(vector<Winners>& newContestant){
@@ -46,4 +87,14 @@ void printvector(vector<Winners>& newContestant){
 		cout << "Contestant age :" << newContestant[i].getage() << endl;
 	}
 }
+int linearSearch(vector<Winners> win, string key)
+{
+for(int i = 0; i < win.size(); i++)
+{
+if (win[i].getname() == key)//we found it
+{
+return i;//return its location
+}
+}//end for
+return -1;}//element not found
 
