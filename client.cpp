@@ -10,13 +10,13 @@ using namespace std;
 void addVector(vector<Candidate>&);
 void printVector(vector<Candidate> &);
 
-int linearSearch(auto data, auto key);//prototype
+int linearSearch(vector <Candidate> &newCandidate, auto key);//prototype
 
-int linearSearch(auto data, auto key)
+int linearSearch(vector <Candidate> &newCandidate, auto key)
 {
-	for (int i=0; i < data.size(); i++)
+	for (int i=0; i < newCandidate.size(); i++)
 	{
-		if (data[i] == key)
+		if (newCandidate[i] == key)
 		{
 			return i;
 		}
@@ -26,8 +26,11 @@ int linearSearch(auto data, auto key)
 
 int main()
 {
+	auto k;
+	
 	vector <Candidate> newCandidate; // vector declaration
-
+	
+	linearSearch(&newCandidate, k);
 	addVector(newCandidate);
 	printVector(newCandidate);
 
