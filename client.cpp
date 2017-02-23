@@ -26,47 +26,42 @@ int linearSearch(auto data, auto key)
 
 int main()
 {
-	vector <Candidate> newCandidate(4);
+	vector <Candidate> newCandidate; // vector declaration
 
 	addVector(newCandidate);
 	printVector(newCandidate);
 
+	system("pause");
+
 	return 0;
 }
 
-
-// add objects to vector
-void addVector(vector <Candidate>& newCandidate)
+// add objects to vector 
+void addVector(vector <Candidate> &newCandidate)
 {
-	
-	string cand;
+	std::string cand;
 	int votes;
-	
-	for (int i = 0; i < newCandidate.size(); i++)
-	{
-		cout << "Enter Candidate Name: ";
-		cin >> cand;
 
-		cout << "Enter Number of Votes: ";
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Enter Candidate's name: ";
+		std::getline(cin>>ws,cand);
+
+		cout << "Enter number of votes: ";
 		cin >> votes;
 
-		Candidate candidates(cand, votes);
-		newCandidate.push_back({cand, votes});
+		newCandidate.push_back(Candidate(cand, votes));
+
 		cout << endl;
 	}
 }
 
-
 //print contents of vector
-void printVector( vector<Candidate> newCandidate)
+void printVector(vector <Candidate> &newCandidate)
 {
-	for (int i = 0; i < newCandidate.size(); i++)
+	for (size_t i = 0; i < newCandidate.size(); i++)
 	{
 		cout << "Candidate Name: " << newCandidate[i].getCandName() << endl;
 		cout << "Number of Votes: " << newCandidate[i].getNumVotes() << endl;
 	}
 }
-
-
-
-

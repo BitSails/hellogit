@@ -1,5 +1,3 @@
-// CLASS DEFINITION
-
 #ifndef CANDIDATE_H
 #define CANDIDATE_H
 #include <string>
@@ -12,18 +10,16 @@ class Candidate
 
 	public:
 		//default constructor
-		Candidate();
+		Candidate()
+		{
+			candName = " ";
+			numVotes = 0;
+		}
 
-		// overload constructor
 		Candidate(std::string, int);
-
-		//accessors
 		std::string getCandName();
 		int getNumVotes();
-
-		//mutators
 		void setCandName(std::string cand);
-		void setNUmVotes(int votes);
-
+		void setNumVotes(int votes);
 };
 #endif

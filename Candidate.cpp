@@ -1,9 +1,6 @@
-// IMPLEMENTATION FILE
-
 #include "Candidate.h"
-#include<iostream>
-#include<string>
-
+#include <iostream>
+#include <string>
 using namespace std;
 
 Candidate::Candidate(string cand, int votes)
@@ -12,14 +9,8 @@ Candidate::Candidate(string cand, int votes)
 	numVotes = votes;
 }
 
-Candidate::Candidate()
-{
-	string candName;
-	int numVotes{0};
-}
-
 //sets candidate name
-void Candidate:: setCandName(string, cand)
+void Candidate::setCandName(string cand)
 {
 	candName = cand;
 }
