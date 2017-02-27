@@ -16,29 +16,38 @@ int linearSearch(auto data, auto key)   //prototype
 	return -1;
 }
 
+
 int main()
 {
+
+	
+	
 vector <books> Books (4);
 string search_key;
 string bName;
 double price;
 int result;
 
+books myObj;
+
+
+
 for (int i=0; i<4; i++)
 {
 cout << "Enter the Book Title:" << endl;
 cin >> bName;
+//cout << "Enter the Price of the Book:" << endl;
+//cin >> price;
+
  while(bName != "#")	//read an unknown number of inputs from keyboard
     {
-       Books.push_back(books);
-       cin>>bName;
+		myObj.setbName(bName);
+        Books.push_back(myObj);
+        cin>>bName;    
     }
     cout<<endl<<"["<<Books.size()<<" values read from input source]"<<endl<<endl;
     
-//Books [i].setbName (bName);
 
-
-// QUIT
 if(Books.size() == 0)//no input
   {
       cout<<endl<<"No input received, quiting..."<<endl<<endl;
