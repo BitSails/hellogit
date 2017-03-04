@@ -21,6 +21,8 @@ int main()
 	vector<Cat>catVec;
 	string catName;
 	int catAge;
+	string search_key;
+	int result;
 
 	for(int i=0;i<=3;i++)
 	{
@@ -36,10 +38,32 @@ int main()
 		cout<<catVec[i].getName()<<"\t";
 		cout<<catVec[i].getAge()<<"\n";
 	}
+	  cout<<"Enter a value to search for: ";
+
+
+   cin>>search_key;
+   while(search_key != "#")//perform searches until sentinel entered
+    {
+        result = linearSearch(catVec,search_key);
+
+        cout<<"  '"<<search_key<<"' was ";
+
+        if (result == -1)
+          cout<<"not found";
+        else
+          cout<<"found at index "<<result;
+
+
+        cout<<endl<<endl<<"Enter a value to search for: ";
+        cin>>search_key; 
+    }
+
+   cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
+
 	return 0;
 	
 	
-  vector<string> inputs;
+  /*vector<string> inputs;
   string search_key, input;
   int result;
 
@@ -87,5 +111,5 @@ int main()
 
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
 
-    return 0;
+    return 0;*/
 }
