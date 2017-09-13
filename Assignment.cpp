@@ -6,15 +6,15 @@
 //  Copyright © 2017 Tap. TOUCH. All rights reserved.
 //
 
-#include "Assignment.hpp"
+#include "Assignment.h"
 #include <iostream>
 
 using namespace std;
 
 
-Assignment::Assignment(int num, int num2){
+Assignment::Assignment(int num, bool isFalse){
     number1 = num;
-    number2 = num2;
+    ;
 }
 
 int Assignment::getNum() {
@@ -24,10 +24,10 @@ void Assignment::setNum(int num) {
     number1 = num;
 }
 
-int Assignment::getNum2() {
-    return number2;
+bool Assignment::getBool() {
+    return whatIs;
 }
 
-void Assignment::setNum2(int num2){
-    number2 = num2;
+void Assignment::setBool(bool isFalse){
+    whatIs = isFalse;
 }

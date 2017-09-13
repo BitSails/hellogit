@@ -7,21 +7,22 @@
 //  Copyright © 2017 Tap. TOUCH. All rights reserved.
 //
 
-#include <iostream>
+
 #include <vector>
-#include "Assignment.hpp"
+#include <iostream>
+#include "Assignment.h"
 
 using namespace std;
 
 int main() {
     // insert code here...
-    Assignment a = {23,22};
+    Assignment a = {23,true};
     
-    vector<Assignment> indexPath = {{33,12}, {25,12}, {18,7}};
-    indexPath.push_back({21,8});
+    vector<Assignment> indexPath = {{33,true}, {25,true}, {18, false}};
+    indexPath.push_back({21,true});
     
     for (int number = 0; number < indexPath.size(); number++) {
-        cout << indexPath[number].getNum() << ", " << indexPath[number].getNum2() << endl;
+        cout << indexPath[number].getNum() << ", " << indexPath[number].getBool() << endl;
     }
     return 0;
 }
