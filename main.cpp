@@ -20,9 +20,10 @@ int linearSearch(auto data, auto key) {
 for(auto i = 0u; i < data.size(); i++)
    {
      if (data[i].getNum() == key)//key found
-     cout << endl << "found";
+     cout << data[i].getNum() << " found";
       return i;
   }
+  
    return -1;//not found
 }
 
@@ -34,7 +35,7 @@ int main() {
     indexPath.push_back({21,true});
     
     for (int number = 0; number < indexPath.size(); number++) {
-        cout << indexPath[number].getNum() << ", " << indexPath[number].getBool() << endl;
+        cout << endl << indexPath[number].getNum() << ", " << indexPath[number].getBool() << endl;
 linearSearch(indexPath, 33);
     }
     return 0;
