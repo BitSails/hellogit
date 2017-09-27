@@ -19,7 +19,8 @@ int linearSearch(auto data, auto key);//prototype
 int linearSearch(auto data, auto key) {
 for(auto i = 0u; i < data.size(); i++)
    {
-     if (data[i] == key)//key found
+     if (data[i].getNum() == key)//key found
+     cout << endl << "found";
       return i;
   }
    return -1;//not found
@@ -34,7 +35,7 @@ int main() {
     
     for (int number = 0; number < indexPath.size(); number++) {
         cout << indexPath[number].getNum() << ", " << indexPath[number].getBool() << endl;
-linearSearch(indexPath, a);
+linearSearch(indexPath, 33);
     }
     return 0;
 }
