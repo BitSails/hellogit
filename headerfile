@@ -1,0 +1,15 @@
+#ifdef CLASSROOM_H
+#define CLASSROOM_H
+    Class Classroom{
+      public:
+            Classroom(int a, stinrg b_:
+                void setAge(inta);
+                  intgetAge():
+                    void setName(string b);
+                      string GetName();
+     private:
+          int age;
+          string name;
+};
+#endif
+
