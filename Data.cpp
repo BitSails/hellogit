@@ -7,7 +7,7 @@ using namespace std;
 class Data
 {
 	
-	public;
+	public:
 	
 	Data::Data()
 	{ 
