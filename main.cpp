@@ -7,7 +7,7 @@ using namespace std;
 {
 	
 	vector<int> v1;
-	vector<int> v2={5,8,22}
+	vector<int> v2={5,8,22};
 	v1.push_back(17);
 	cout << "V2 has " << v2.size() << "elements" << endl;
 	
