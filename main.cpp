@@ -4,12 +4,14 @@
 
 using namespace std;
 
+int main()
+
 {
 	
 	vector<int> v1;
-	vector<int> v2={5,8,22}
+	vector<int> v2={5,8,22};
 	v1.push_back(17);
-	cout << "V2 has " << v2.size() << "elements" << endl;
+	cout << "V2 has " << v2.size() << " elements. They are:" << endl<<endl;
 	
 	for (auto x:v2)
 	{
@@ -23,15 +25,19 @@ using namespace std;
 	
 	vector<Data> v;
 	v.push_back( {7,21.01} );
+	Data d;
 	v.push_back(d);
 	d.setX(10);
 	d.setY(12.10);
 	v.push_back(d);
 	
+	cout <<endl<<"The Vector V of type Data contains: "<< endl<<endl;
+	
 	for (auto a:v)
 	{
-		cout << a.getx() << " ";
-		cout << a.getY() << endl;
+		cout << a.getX() << " ";
+		cout << a.getY() << endl<< endl;
+	}
 	return 0;
 	
 }

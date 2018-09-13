@@ -1,13 +1,8 @@
 #include <iostream>
-#include <vector>
 #include "Data.h"
 
 using namespace std;
 
-class Data
-{
-	
-	public;
 	
 	Data::Data()
 	{ 
@@ -20,21 +15,20 @@ class Data
 		x=a;
 		y=b;
 	}
-	Data::float getY()
+	float Data::getY()
 	{
 		return y;
 	}
-	Data::int getX()
+	int Data::getX()
 	{
 		return x;
 	}
-	Data::void setX(int a)
+	void Data::setX(int a)
 	{
 		x=a;
 	}
-	Data::void setY(float a)
+	void Data::setY(float a)
 	{
 		y=a;
 	}
 	
-};
